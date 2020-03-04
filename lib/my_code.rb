@@ -35,10 +35,9 @@ i = 0
   while i < array.length 
     if array[i] == true 
       return true
-    else 
-      return false 
     end 
     i += 1 
   end
+  return false
 end 
 

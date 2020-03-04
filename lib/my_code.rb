@@ -20,7 +20,13 @@ array.reduce(sv) { |sum, num | sum + num }
 end 
 
 def reduce_to_all_true (array)
-array.reduce { | val | val == true }
+i = 0 
+  while i < array.length
+  if array[i] == false 
+    return false 
+  else
+    return true
+  end 
 end 
       
 def reduce_to_any_true(array)

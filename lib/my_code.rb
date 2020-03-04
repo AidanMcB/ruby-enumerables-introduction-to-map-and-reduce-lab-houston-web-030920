@@ -27,9 +27,10 @@ def reduce_to_total (array, sv)
   while i < array.length 
     sum = yield(sum, array[i])
     i += 1 
+end 
+sum
+end 
 
-end 
-end 
 def reduce_to_all_true (array)
 
 end 

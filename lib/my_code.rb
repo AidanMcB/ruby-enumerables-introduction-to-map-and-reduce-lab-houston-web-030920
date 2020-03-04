@@ -15,12 +15,7 @@ def map_to_square (array)
  array.map { | n | n *= n }
 end 
 
-def reduce_to_total (array, s_point=0)
-array.reduce(0) { | sum, num | sum + num }
-sum 
-end 
-
-def reduce_to_all_true (array)
+def reduce_to_total (array, sv)
 if sv 
   sum = sv 
   i = 0 
@@ -32,6 +27,10 @@ end
   while i < array.length 
     sum = yield(sum, array[i])
     i += 1 
+
+end 
+
+def reduce_to_all_true (array)
 
 end 
       

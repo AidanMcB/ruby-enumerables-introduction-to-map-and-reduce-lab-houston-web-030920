@@ -27,9 +27,19 @@ i = 0
   else
     return true
   end 
+  i += 1 
 end 
-end    
+end  
+
 def reduce_to_any_true(array)
-array.reduce { | val | val == true }
+i = 0 
+  while i < array.length 
+    if array[i] == true 
+      return true
+    else 
+      return false 
+    end 
+    i += 1 
+  end
 end 
 

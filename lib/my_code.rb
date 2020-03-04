@@ -24,11 +24,10 @@ i = 0
   while i < array.length
   if array[i] == false
     return false
-  else
-    return true
   end 
   i += 1 
 end 
+return true
 end  
 
 def reduce_to_any_true(array)

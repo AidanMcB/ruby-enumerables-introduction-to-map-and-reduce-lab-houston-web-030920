@@ -28,7 +28,7 @@ i = 0
     return true
   end 
 end 
-      
+end    
 def reduce_to_any_true(array)
 array.reduce { | val | val == true }
 end 

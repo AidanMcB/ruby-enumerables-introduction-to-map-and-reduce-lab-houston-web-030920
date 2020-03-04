@@ -16,19 +16,7 @@ def map_to_square (array)
 end 
 
 def reduce_to_total (array, sv)
-  if sv 
-    sum = sv 
-    i = 0 
-  else 
-    sum = array[0] 
-    i = 1 
-  end 
 
-  while i < array.length 
-    sum = yield(sum, array[i])
-    i += 1 
-end 
-sum
 end 
 
 def reduce_to_all_true (array)

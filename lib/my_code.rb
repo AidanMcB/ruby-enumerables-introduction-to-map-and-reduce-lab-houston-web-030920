@@ -4,7 +4,7 @@ array.map { | n | n *= - 1 }
 end
   
 def map_to_no_change(array)
- 
+ array.map { | n | n = n }
 end 
 
 def map_to_double (array)
